@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Elyn P. Gabuya 01503</title>
+        <link rel="stylesheet" href="entry.css">
+    </head>
+
+    <body>
+
+        <form id="entry">
+            <fieldset>
+                
+            <label for="studentName">Student's Name</label>
+            <input type="text" id="studentName" required minlength="3">
+
+            <label for="degree">Degree</label>
+            <select id="degree" required>
+                <option value="">-- Select --</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSCS">BSCS</option>
+            </select>
+
+            <label for="course">Course</label>
+            <select id="course" required>
+                <option value="">-- Select --</option>
+                <option value="COMPROG21">COMPROG21</option>
+                <option value="WEBDEV11">WEBDEV11</option>
+            </select>
+
+            <label for="quizGrade">Quizzes Grade</label>
+            <input type="number" id="quizGrade" min="0" max="100" required>
+
+            <label for="projectGrade">Projects Grade</label>
+            <input type="number" id="projectGrade" min="0" max="100" required>
+
+            <label for="examGrade">Exam Grade</label>
+            <input type="number" id="examGrade" min="0" max="100" required>
+
+            <button type="submit">Submit</button>
+            <p id="fix"></p>
+
+            </fieldset>
+        </form>
+
+        <script src="entry.js"></script>
+    </body>
+</html>
